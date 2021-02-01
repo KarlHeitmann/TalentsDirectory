@@ -25,29 +25,31 @@ const digital_talents = [
 
 function templateCards(people) {
     console.log("templateCards");
+    let string_html = ''
     people.forEach(person => {
-        document.write('<div class="col-lg-3 pb-4">');
-        document.write('    <div class="card text-center font-weight-light border-white">');
-        document.write(`        <img src="${person.image}" class="shadow-lg rounded" alt="Foto">`);
-        document.write('        <div class="card-body bg-white shadow p-3 mb-5 rounded text-dark">');
-        document.write('            <div class="info text-left">');
-        document.write(`                <h4 class="name">${person.name}</h4>`);
-        document.write(`                <p class="profesion">${person.profesion}</p>`);
-        document.write('            </div>');
-        document.write('            <ul class="icons list-style-none text-white text-decoration-none p-0">');
-        document.write('                <li class="d-inline">');
-        document.write('                    <a href="https://www.github.com"><i class="fab fa-github-square fa-2x pl-1"></i></a>');
-        document.write('                </li>');
-        document.write('                <li class="d-inline">');
-        document.write('                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x pl-1"></i></a>');
-        document.write('                </li>');
-        document.write('                <li class="d-inline">');
-        document.write('                    <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x pl-1"></i></a>');
-        document.write('                </li>');
-        document.write('            </ul>');
-        document.write('            <a href="#" class="btn btn-info my-3">Ver perfil</a>');
-        document.write('        </div>');
-        document.write('    </div>');
-        document.write('</div>');
+        string_html = string_html + '<div class="col-lg-3 pb-4">';
+        string_html = string_html + '    <div class="card text-center font-weight-light border-white">';
+        string_html = string_html + `        <img src="${person.image}" class="shadow-lg rounded" alt="Foto">`;
+        string_html = string_html + '        <div class="card-body bg-white shadow p-3 mb-5 rounded text-dark">';
+        string_html = string_html + '            <div class="info text-left">';
+        string_html = string_html + `                <h4 class="name">${person.name}</h4>`;
+        string_html = string_html + `                <p class="profesion">${person.profesion}</p>`;
+        string_html = string_html + '            </div>';
+        string_html = string_html + '            <ul class="icons list-style-none text-white text-decoration-none p-0">';
+        string_html = string_html + '                <li class="d-inline">';
+        string_html = string_html + '                    <a href="https://www.github.com"><i class="fab fa-github-square fa-2x pl-1"></i></a>';
+        string_html = string_html + '                </li>';
+        string_html = string_html + '                <li class="d-inline">';
+        string_html = string_html + '                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x pl-1"></i></a>';
+        string_html = string_html + '                </li>';
+        string_html = string_html + '                <li class="d-inline">';
+        string_html = string_html + '                    <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x pl-1"></i></a>';
+        string_html = string_html + '                </li>';
+        string_html = string_html + '            </ul>';
+        string_html = string_html + '            <a href="#" class="btn btn-info my-3">Ver perfil</a>';
+        string_html = string_html + '        </div>';
+        string_html = string_html + '    </div>';
+        string_html = string_html + '</div>';
     });
+    console.log(string_html);
 }
