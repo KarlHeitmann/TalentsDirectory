@@ -17,3 +17,12 @@ $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip()
     })
 })
+
+const digital_talents = [
+    {'name': 'Alejandra Serrano', 'profesion': 'Full stack / Relacionista Pública', 'image': 'assets/img/alejandra.png'},
+    {'name': 'Alonso Viales', 'profesion': 'Full stack', 'image': 'assets/img/alonso.jpg'},
+]
+
+function templateCards() {
+    console.log("templateCards");
+}
