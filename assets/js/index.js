@@ -52,4 +52,7 @@ function templateCards(people) {
         string_html = string_html + '</div>';
     });
     console.log(string_html);
+    const card_deck_digital_talents = document.getElementById('digital-talents')
+    console.log(card_deck_digital_talents);
+    card_deck_digital_talents.innerHTML = string_html;
 }
